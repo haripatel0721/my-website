@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regency Inn & Suites | Houston, TX</title>
+  <link rel="icon" href="https://i.imgur.com/tLYfkzh.png" type="image/gif">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container flex-end">
+      <span>Call us now on <a href="tel:(713) 648 8222">(713) 648 8222</a></span>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container header-content">
+      <div class="brand">
+        <h1>REGENCY INN<span>& SUITES</span></h1>
+      </div>
+      
+      <nav class="desktop-nav">
+        <a href="#">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+
+      <a href="#book" class="btn-book-nav">Book Now</a>
+      
+      <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider-container">
+      <div class="slide active" style="background-image: url('https://lh3.googleusercontent.com/p/AF1QipP6UKN0p1BGC_FWadZNRVW8-aC7jjMf0hXEtnvU=s0');"></div>
+      <div class="slide" style="background-image: url('https://lh3.googleusercontent.com/p/AF1QipPgubnYr2WyU7JT-RosMF4L7wcGVY0oNY_uY-JP=s0');"></div>
+    </div>
+
+    <div class="hero-overlay">
+      <h2>REGENCY INN & SUITES</h2>
+      <h3>Your Preferred Hotel on I-10 in Houston</h3>
+      <a href="#book" class="btn-hero">Check Availability</a>
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+  </section>
+
+  <section class="section welcome-section">
+    <div class="container">
+      <h2 class="section-title">WELCOME TO YOUR RELAXING GETAWAY IN HOUSTON</h2>
+      <div class="welcome-content">
+        <div class="welcome-text">
+          <p>
+            **Spacious, relaxing rooms at Regency Inn & Suites.** Set in the heart of the city right off Interstate 10, we provide the perfect rest stop 
+            for road trippers, business travelers, and vacationers alike.
+          </p>
+          <p>
+            We understand that you want value for your money, and that's why we offer affordable 
+            rooms without compromising on quality. Whether you are heading to the Energy Corridor 
+            or visiting local parks, you are never far from your destination.
+          </p>
+          <a href="#rooms" class="btn-text">View Our Rooms →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section features-section">
+    <div class="container">
+      <div class="features-grid">
+        
+        <div class="feature-card">
+          <div class="icon">📍</div>
+          <h3>Easy Access</h3>
+          <p>Located directly off I-10 for quick travel to Downtown Houston.</p>
+          
+          <div class="feature-map">
+            <iframe 
+              width="100%" 
+              height="250" 
+              frameborder="0" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy"
+              src="https://maps.google.com/maps?q=10801+East+Fwy,+Houston,+TX+77013&output=embed">
+            </iframe>
+          </div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="icon">☕</div>
+          <h3>Modern Amenities</h3>
+          <p>Free high-speed Wi-Fi, cable TV, and <strong>free coffee served everyday.</strong></p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="icon">💲</div>
+          <h3>Best Value</h3>
+          <p>Neat and clean rooms with friendly service at a budget-friendly price.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="rooms" class="section rooms-section">
+    <div class="container">
+      <h2 class="section-title">OUR ROOMS</h2>
+      <div class="rooms-grid">
+        
+        <div class="room-card">
+          <div class="room-slideshow">
+            <img src="https://lh5.googleusercontent.com/proxy/-I7qDNfHEZ102kW9E8fJnSX_BwSq42q_q7leg0H17u0beZ6Kvn9SteGYnV9UMNRzqF7UM5CB7i83zxgNgkfKDGa8n49NJ3kBw5uh1ZgRKDl_luGXeshLlMk71RvIDGNgYMXk9n_FH48UG2d3-3psyWqeORAJuos=s0" class="room-slide active" alt="Standard Room View 1">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMeZ2440o8JXY_DF7snmooJLAXNN_sfJi6ojxpo=w0" class="room-slide" alt="Room View 2">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNqp84pwiyBxaRnbiOCh8kipq3FRY5X4NboRW7b=w0" class="room-slide" alt="Room View 3">
+            
+            <button class="room-arrow left" onclick="changeRoomSlide(this, -1)">❮</button>
+            <button class="room-arrow right" onclick="changeRoomSlide(this, 1)">❯</button>
+          </div>
+
+          <div class="room-info">
+            <h3>Standard King</h3>
+            <p>Spacious bed, work desk, and full bath.</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-slideshow">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipP6UKN0p1BGC_FWadZNRVW8-aC7jjMf0hXEtnvU=s0" class="room-slide active" alt="Deluxe Room View 1">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipO0dSIK-Busaq9KMdu2hQfMIbJZvMqdM1kMnZUn=w0" class="room-slide" alt="Room View 2">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPzgWChDJFlYo9XD7okH5RLvO1--Fh0-zXv_5T_=w0" class="room-slide" alt="Room View 3">
+
+            <button class="room-arrow left" onclick="changeRoomSlide(this, -1)">❮</button>
+            <button class="room-arrow right" onclick="changeRoomSlide(this, 1)">❯</button>
+          </div>
+
+          <div class="room-info">
+            <h3>Double Queen</h3>
+            <p>Perfect for families, sleeps up to 4 guests.</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="section booking-section">
+    <div class="container">
+      <h2 class="section-title white">BOOK YOUR STAY</h2>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h4>Regency Inn & Suites</h4>
+        <p>Your home away from home in Houston.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>📍 10801 East Fwy, Houston, TX 77013</p>
+        <p>📞 (713) 648 8222</p>
+        <p>✉️ regencyinnhoustoneast@gmail.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <a href="#">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#attractions">Attractions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
